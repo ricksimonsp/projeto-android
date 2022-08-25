@@ -1,0 +1,227 @@
+    @charset "UTF-8";
+
+    @font-face {
+        font-family: 'idroid';
+        src: url('idroid.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    :root {
+        --cor0: #c5ebd6;
+        --cor1: #83E1AD;
+        --cor2: #3DDC84;
+        --cor3: #2FA866;
+        --cor4: #1A5C37;
+        --cor5: #063d1e;
+        --fonte0: Arial, Helvetica, sans-serif;
+        --fonte1: 'Bebas Neue', cursive;
+        --fonte2: 'Android', sans-serif; 
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+    body {
+        background-color: var(--cor1);
+        
+    }
+
+    a.externo::after {
+        content: '\1F517';
+    }
+
+    
+    header {
+        
+        min-height: 150px;
+        text-align: center;
+        padding-top: 40px;
+        margin: 10px;
+        margin-bottom: 0%;
+        background-image: linear-gradient(to bottom, #3DDC84, #063d1e);
+        /*box-shadow: 2px 2px 5px black;*/
+    }
+
+    header > h1 {
+        font-family: var(--fonte1);
+        color: white;
+        font-size: 3em;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    header > p {
+        font-family: var(--fonte0);
+        font-size: 1.2em;
+        color: white;
+        max-width: 600px;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-shadow: 2px 2px 5px black;
+
+    }
+
+    main {
+        
+        
+        background-color: white;
+        padding: 20px;
+        margin: auto; display: block;
+        min-width: 300px;
+        max-width: 1000px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.395);
+        border-radius: 0px 0px 10px 10px; 
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    main p {
+        text-indent: 20px;
+        /*padding: 10px;*/
+        margin: 10px;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    main strong {
+        color: var(--cor4);
+        font-weight: bold;
+    }
+
+    main a:hover {
+        color: #3DDC84;
+        text-decoration: underline;
+
+    }
+
+    .small {
+        max-width: 350px;
+        margin: auto; display: block; 
+    } 
+    
+    nav {
+        background-color: #063d1e;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 0%;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.369);
+    }
+
+    nav > a {
+        padding: 10px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    nav > a:hover {
+        color: #83E1AD;
+        
+        
+    }
+
+    article > h1 {
+        background-image: linear-gradient(to left, #e8f8ef, #d9f6e6);
+        padding: 10px;
+        margin: 10px;
+        font-family: 'idroid';
+        color: var(--cor4);
+        text-decoration: none;
+        font-size: 2em;
+    }
+
+    
+    article > h2 {
+        background-image: linear-gradient(to left, #e8f8ef, #d9f6e6);
+        padding: 10px;
+        margin: 10px;
+        font-family: 'idroid';
+        color: #2FA866;
+        text-decoration: none;
+    }
+
+    article > p > a {
+        color: #1A5C37;
+        text-decoration: none;
+    }
+
+         
+    div.video {
+        
+        background-color: var(--cor5);
+        margin: 0px -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 57%;
+        position: relative;
+        
+        
+    }
+
+    iframe {
+        
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: var(--cor4);
+        padding: 10px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    aside {
+        
+        padding: 10px;
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--cor0);
+        border-radius: 10px;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.369);
+
+    }
+
+    aside > p > a {
+        text-decoration: none;
+        color: #063d1e;
+    }
+
+    aside ul {
+        list-style-position: inside;
+        columns: 2;
+        list-style-type: '\2714\00A0\00A0';
+    }
+
+    footer {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: #063d1e;
+            padding: 5px;
+            margin: 15px;
+            border-radius: 5px;
+        }
+
+    footer > p {
+        margin: 0px;
+        font-size: 0.8em;
+    }
+
+    footer > p > a {
+        text-decoration: none;
+        color: white;
+    }
